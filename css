@@ -1,0 +1,70 @@
+
+<style>
+.w-slider-dot {
+    height: 12px !important;
+    width: 12px !important;
+    background-color: #0000;
+    margin: 0 !important;
+    border: 1px solid #fff !important;
+    }
+    
+    /* Dodaj ovo u svoj CSS fajl */
+.fade-out-left {
+  animation: fadeOutLeft 0.8s forwards;
+}
+
+.fade-out-right {
+  animation: fadeOutRight 0.8s forwards;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-80%) rotate(-15deg);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(80%) rotate(15deg);
+  }
+}
+
+.pagination_dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0000;
+    border: 1px solid #E2E0DD;
+    }
+
+.pagination_dot.active {
+    background-color: #E2E0DD;
+}
+
+@media only screen and (min-width: 1600px) {
+  .time_image-wrapper {
+    height: 585px;
+    max-width: 690px;
+  }
+  .frame_container {
+  	height: 650px;
+  }
+  .frame_wrapper {
+  	max-width: none;
+  }
+  
+  .sticky-item {
+  	    grid-row-gap: 60px;
+  }
+}
+</style>
